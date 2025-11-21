@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explorar cursos - Aprenda Fácil</title>
+
+  <!-- Mesma fonte e mesmo CSS da index/sobre -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER reutilizado -->
+  <header class="topo" id="topo">
+    <div class="wrap topo-inner">
+      <a href="index.html">
+        <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
+      </a>
+
+      <!-- Se quiser, dá pra trocar o botão por um menu depois -->
+      <button class="perfil-btn" type="button">Perfil</button>
+    </div>
+  </header>
+
+  <main class="pagina-cursos">
+
+    <!-- HERO da página de cursos -->
+    <section class="cursos-hero">
+      <div class="wrap">
+        <h1>Explorar cursos</h1>
+        <p class="subtitulo-cursos">
+          Aqui você pode organizar trilhas de estudo para iniciantes em tecnologia,
+          pessoas em transição de carreira e quem está começando a aprender do zero.
+        </p>
+      </div>
+    </section>
+
+    <!-- Grade de “cursos” (por enquanto, cards conceituais) -->
+    <section class="cursos-lista">
+      <div class="wrap cursos-grid">
+
+        <article class="card-curso">
+          <h2>Fundamentos de HTML & CSS</h2>
+          <p>Base para criar páginas web, entender estrutura, semântica e estilos visuais.</p>
+          <ul>
+            <li>Introdução ao HTML</li>
+            <li>Tags mais usadas</li>
+            <li>Introdução ao CSS e cores</li>
+          </ul>
+        </article>
+
+        <article class="card-curso">
+          <h2>Primeiros passos em JavaScript</h2>
+          <p>Comece a dar vida às páginas com interatividade e lógica no navegador.</p>
+          <ul>
+            <li>Variáveis e tipos</li>
+            <li>Condições e laços</li>
+            <li>Funções básicas</li>
+          </ul>
+        </article>
+
+        <article class="card-curso">
+          <h2>Lógica de Programação para iniciantes</h2>
+          <p>Algoritmos, raciocínio passo a passo e resolução de problemas.</p>
+          <ul>
+            <li>Sequência de passos</li>
+            <li>Fluxogramas simples</li>
+            <li>Exemplos do dia a dia</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+<!-- ========= RODAPÉ ========= -->
+  <!-- FOOTER reaproveitado -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-col">
+        <h3>Aprenda Fácil</h3>
+        <p>Seu portal para aprendizado gratuito e acessível.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Mapa do site</h4>
+    <ul>
+         <li><a href="index.html">Início</a></li>
+         <li><a href="sobre.html">Sobre o projeto</a></li>
+         <li><a href="cursos.html">Explorar cursos</a></li>
+         <li><a href="guia.html">Guia para os estudos</a></li>
+         <li><a href="ebooks.html">Ebooks</a></li>
+         <li><a href="documentacao.html">Documentação</a></li>
+        </ul>
+        </div>
+
+       <div class="footer-col">
+        <h4>Projeto de Extensão</h4>
+        <p>Descomplica • ADS – Projeto de Extensão I</p>
+        <p>ODS 4 – Educação de Qualidade</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo (já existe no CSS) -->
+  <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

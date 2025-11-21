@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aprenda Fácil</title>
+
+  <!-- Fonte opcional (online) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Arquivo de estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========= HEADER (logo + botão Perfil) ========= -->
+  <header class="topo" id="topo">
+    <div class="wrap topo-inner">
+      <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
+      <button class="perfil-btn" type="button">Perfil</button>
+      
+    </div>
+  </header>
+
+  <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+  <main>
+
+    <!-- ===== GRID: menu lateral + hero ===== -->
+    <div class="wrap layout">
+
+      <!-- MENU LATERAL -->
+      <aside class="sidebar" aria-label="Navegação principal">
+        <a class="cta" href="cursos.html">Explorar Cursos</a>
+        <a class="cta" href="guia.html">Guia para os Estudos</a>
+        <a class="cta" href="ebooks.html">Ebooks</a>
+        <a class="cta" href="sobre.html">Sobre</a>
+
+      </aside>
+
+      <!-- HERO (frase + busca) -->
+      <section class="hero" aria-labelledby="titulo-hero">
+        <h1 id="titulo-hero">Seu portal para aprendizado gratuito e acessível!</h1>
+
+        <form class="search" role="search" aria-label="Buscar cursos e materiais">
+          <label class="visually-hidden" for="q">Buscar</label>
+          <input id="q" name="q" type="search" placeholder="Buscar">
+          <button type="submit" class="icon-btn" title="Pesquisar" aria-label="Pesquisar">
+            🔍
+          </button>
+        </form>
+      </section>
+
+    </div> <!-- fim .wrap.layout -->
+
+    <!-- ===== SEÇÃO: Áreas de Aprendizado ===== -->
+    <section class="categorias">
+      <div class="wrap">
+        <h2>Áreas de Aprendizado</h2>
+
+        <div class="grid-categorias">
+          <article class="card">
+            <h3>Tecnologia</h3>
+            <p>Aprenda HTML, CSS, JavaScript e fundamentos de programação.</p>
+          </article>
+
+          <article class="card">
+            <h3>Matemática</h3>
+            <p>Desenvolva raciocínio lógico, cálculo e resolução de problemas.</p>
+          </article>
+
+          <article class="card">
+            <h3>Português</h3>
+            <p>Melhore sua escrita, gramática e interpretação de textos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO: Sobre o Aprenda Fácil ===== -->
+    <section id="sobre" class="sobre">
+      <div class="wrap sobre-conteudo">
+
+        <div class="sobre-texto">
+          <h2>Sobre o Aprenda Fácil</h2>
+          <p>
+            O <strong>Aprenda Fácil</strong> é um portal criado para promover o acesso
+            gratuito ao conhecimento digital, com foco em inclusão, autonomia e
+            oportunidades para quem deseja aprender no seu próprio ritmo.
+          </p>
+          <p>
+            A plataforma reúne conteúdos organizados em trilhas de estudo, guias e
+            materiais de apoio, ajudando estudantes, iniciantes em tecnologia e pessoas
+            em transição de carreira.
+          </p>
+
+          <ul class="sobre-lista">
+            <li>Conteúdos gratuitos e de fácil compreensão;</li>
+            <li>Foco em tecnologia, matemática e língua portuguesa;</li>
+            <li>Organização em guias de estudo, ebooks e trilhas de aprendizado.</li>
+          </ul>
+        </div>
+
+        <aside class="sobre-card">
+          <h3>ODS 4 – Educação de Qualidade</h3>
+          <p>
+            Este projeto está alinhado ao Objetivo de Desenvolvimento Sustentável
+            <strong>4 – Educação de Qualidade</strong>, contribuindo para:
+          </p>
+          <ul>
+            <li>Ampliar o acesso ao conhecimento digital;</li>
+            <li>Reduzir barreiras de estudo por falta de recursos;</li>
+            <li>Estimular o aprendizado contínuo e a autonomia.</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========= RODAPÉ ========= -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      
+      <div class="footer-col">
+        <h3>Aprenda Fácil</h3>
+        <p>Seu portal para aprendizado gratuito e acessível.</p>
+      </div>
+
+      <div class="footer-col">
+  <h4>Mapa do site</h4>
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre o projeto</a></li>
+    <li><a href="cursos.html">Explorar cursos</a></li>
+    <li><a href="guia.html">Guia para os estudos</a></li>
+    <li><a href="ebooks.html">Ebooks</a></li>
+    <li><a href="documentacao.html">Documentação</a></li>
+  </ul>
+</div>
+
+      <div class="footer-col">
+        <h4>Projeto de Extensão</h4>
+        <p>Descomplica • ADS – Projeto de Extensão I</p>
+        <p>ODS 4 – Educação de Qualidade</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="scroll-top" aria-label="Voltar ao topo">
+    ↑
+  </button>
+
+  <!-- Arquivo JS -->
+  <script src="script.js"></script>
+</body>
+</html>
