@@ -11,17 +11,19 @@
 </head>
 <body>
 
-  <!-- HEADER reutilizado -->
+  <!-- ========= HEADER (logo + botão Perfil) ========= -->
   <header class="topo" id="topo">
     <div class="wrap topo-inner">
-      <a href="index.html">
-        <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
-      </a>
+      <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
 
-      <!-- Se quiser, dá pra trocar o botão por um menu depois -->
-      <button class="perfil-btn" type="button">Perfil</button>
-    </div>
-  </header>
+       <!-- Botão Perfil CORRETO -->
+    <button
+      class="perfil-btn"
+      type="button"
+      onclick="window.location.href='perfil.html'">Perfil
+    </button>
+  </div>
+</header>
 
   <main class="pagina-cursos">
 
@@ -114,3 +116,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
