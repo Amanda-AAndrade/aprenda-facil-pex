@@ -1,10 +1,16 @@
 **Aprenda Fácil – Projeto de Extensão ADS**
+
+
 Portal educacional gratuito criado para apoiar estudantes iniciantes em tecnologia.
 Este repositório contém o código-fonte completo do portal Aprenda Fácil, desenvolvido como parte do Projeto de Extensão I – Curso de Análise e Desenvolvimento de Sistemas (ADS).
 O site reúne conteúdos introdutórios, trilhas de estudo, guias de organização, materiais complementares e documentação detalhada do projeto.
 
+
+
 **Acesse o portal online:**
 [https://amanda-aandrade.github.io/aprenda-facil-pex/](https://amanda-aandrade.github.io/aprenda-facil-pex/)
+
+
 
 **Objetivo do Projeto**
 Criar um portal digital simples, intuitivo e acessível, que ajude:
@@ -21,8 +27,12 @@ Leitores e criadores de conteúdo interessados em programação
 O foco é oferecer uma experiência leve, amigável e sem barreiras.
 
 
+
+
 **Estrutura do Portal**
 O projeto inclui as seguintes páginas e seções:
+
+
 
 **Páginas principais**
 index.html – Página inicial, barra de busca e áreas de aprendizado
@@ -40,12 +50,16 @@ perfil.html – Perfil da autora e jornada na tecnologia
 documentacao.html – Documento completo com escopo, metodologia e resultados
 
 
+
+
 ** Arquivos de suporte **
 style.css – Folhas de estilo, responsividade e design
 
 script.js – Funções simples (ex: rolar para o topo)
 
 logo-aprenda-facil.png – Logotipo oficial do portal
+
+
 
 
 **Tecnologias Utilizadas**
@@ -62,6 +76,8 @@ Miro / Canva – Prototipação visual
 VS Code – Desenvolvimento do projeto
 
 GitHub Pages – Publicação do site
+
+
 
 
 **Documentação Completa**
@@ -84,9 +100,13 @@ Resultados alcançados
 Melhorias futuras (roadmap)
 
 
+
+
 **Considerações finais**
 
 -Arquivo: documentacao.html
+
+
 
 
 **-*Roadmap (Melhorias Futuras)*-**
@@ -105,6 +125,8 @@ Deploy em domínio próprio
 
 
 
+
+
 🧑‍💻 Autora
 Amanda A. Andrade
 
@@ -116,11 +138,15 @@ GitHub: [https://github.com/Amanda-AAndrade](https://github.com/Amanda-AAndrade)
 
 
 
+
+
 Como executar o projeto localmente
 
 Baixe o repositório:
 
 git clone [https://github.com/Amanda-AAndrade/aprenda-facil-pex.git](https://github.com/Amanda-AAndrade/aprenda-facil-pex.git)
+
+
 
 
 Acesse a pasta:
@@ -129,9 +155,13 @@ cd aprenda-facil-pex
 
 
 
+
+
 Abra o arquivo index.html no navegador.
 
 Pronto! O portal funciona 100% offline.
+
+
 
 
 
