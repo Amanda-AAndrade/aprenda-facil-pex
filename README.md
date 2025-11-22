@@ -8,11 +8,13 @@ O site reúne conteúdos introdutórios, trilhas de estudo, guias de organizaç�
 
 
 **Acesse o portal online:**
+
 [https://amanda-aandrade.github.io/aprenda-facil-pex/](https://amanda-aandrade.github.io/aprenda-facil-pex/)
 
 
 
 **Objetivo do Projeto**
+
 Criar um portal digital simples, intuitivo e acessível, que ajude:
 Pessoas iniciando seus estudos em tecnologia
 
@@ -30,11 +32,13 @@ O foco é oferecer uma experiência leve, amigável e sem barreiras.
 
 
 **Estrutura do Portal**
+
 O projeto inclui as seguintes páginas e seções:
 
 
 
 **Páginas principais**
+
 index.html – Página inicial, barra de busca e áreas de aprendizado
 
 sobre.html – Objetivo, público-alvo, ODS 4 e estrutura do portal
@@ -53,6 +57,7 @@ documentacao.html – Documento completo com escopo, metodologia e resultados
 
 
 ** Arquivos de suporte **
+
 style.css – Folhas de estilo, responsividade e design
 
 script.js – Funções simples (ex: rolar para o topo)
@@ -63,6 +68,7 @@ logo-aprenda-facil.png – Logotipo oficial do portal
 
 
 **Tecnologias Utilizadas**
+
 HTML5 – Estrutura e semântica
 
 CSS3 – Layout responsivo, flexbox, grid, sombras e gradientes
@@ -81,6 +87,8 @@ GitHub Pages – Publicação do site
 
 
 **Documentação Completa**
+
+
 O portal possui uma página dedicada com:
 
 Objetivo geral e específicos
@@ -104,12 +112,14 @@ Melhorias futuras (roadmap)
 
 **Considerações finais**
 
+
 -Arquivo: documentacao.html
 
 
 
 
 **-*Roadmap (Melhorias Futuras)*-**
+
 
 Integração com back-end
 
@@ -128,6 +138,8 @@ Deploy em domínio próprio
 
 
 🧑‍💻 Autora
+
+
 Amanda A. Andrade
 
 Desenvolvedora em formação – ADS (2024–2026)
@@ -165,7 +177,7 @@ Pronto! O portal funciona 100% offline.
 
 
 
-❤️ Agradecimentos:
+**❤️ Agradecimentos:**
 
 Projeto desenvolvido com dedicação, estudo constante e amor pela educação acessível.
 
