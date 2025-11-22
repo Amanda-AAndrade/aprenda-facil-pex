@@ -70,15 +70,15 @@ Futura desenvolvedora Full-Stack e criadora do Qzverso e Aprenda Fácil.
 
 GitHub: [https://github.com/Amanda-AAndrade](https://github.com/Amanda-AAndrade)
 
-* Como executar o projeto localmente
+Como executar o projeto localmente
 Baixe o repositório:
 git clone [https://github.com/Amanda-AAndrade/aprenda-facil-pex.git](https://github.com/Amanda-AAndrade/aprenda-facil-pex.git)
 
 
-- Acesse a pasta:
+Acesse a pasta:
 cd aprenda-facil-pex
 
-- Abra o arquivo index.html no navegador.
+Abra o arquivo index.html no navegador.
 Pronto! O portal funciona 100% offline.
 
 
