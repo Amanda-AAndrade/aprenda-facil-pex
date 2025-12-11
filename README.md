@@ -164,6 +164,7 @@ git clone [https://github.com/Amanda-AAndrade/aprenda-facil-pex.git](https://git
 Acesse a pasta:
 
 cd aprenda-facil-pex
+[Projeto_Aprenda_Facil_PEX_I.pdf](https://github.com/user-attachments/files/24113326/Projeto_Aprenda_Facil_PEX_I.pdf)
 
 
 
