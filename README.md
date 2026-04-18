@@ -13,7 +13,10 @@ Este repositório reúne meus Projetos de Extensão (PEX I–V), desenvolvidos n
 - **ODS 3 — Saúde e Bem-estar** (Aurora)
 
 ## 🔗 Links
-- [Portal (GitHub Pages): *(coloque seu link aqui se quiser)*](https://amanda-aandrade.github.io/aprenda-facil-pex/)
+[- [Portal (GitHub Pages): *(coloque seu link aqui se quiser)*](https://amanda-aandrade.github.io/aprenda-facil-pex/)
+](https://github.com/Amanda-AAndrade/aprenda-facil-pex/tree/main)
+
+https://amanda-aandrade.github.io/aprenda-facil-pex/ 
 
 ## 👩‍💻 Autora
 Amanda A. Andrade
