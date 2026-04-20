@@ -10,6 +10,36 @@ O Projeto de Extensão V representa a etapa final do desenvolvimento das ativida
 
 Como solução para os problemas identificados, foi desenvolvido o portal web **Aprenda Fácil**, com o objetivo de organizar informações, disponibilizar conteúdos de apoio emocional e facilitar o acesso dos usuários aos serviços da instituição.
 
+---
+
+## 📸 Evidências da Solução
+
+Para validar a proposta desenvolvida, foi criado o portal web **Aprenda Fácil**, que pode ser acessado no link abaixo:
+
+🔗 https://amanda-aandrade.github.io/aprenda-facil-pex/
+
+A plataforma apresenta funcionalidades completas voltadas ao apoio emocional e organização de conteúdos, incluindo:
+
+- Página inicial com navegação intuitiva
+- Área de cursos educativos
+- Biblioteca de e-books
+- Guia de apoio emocional
+- Estrutura de perfil do usuário
+
+Mesmo sendo um projeto acadêmico, a solução foi desenvolvida com base em cenários reais, simulando a utilização por usuários que necessitam de apoio emocional e acesso facilitado à informação.
+
+---
+
+## 🧪 Simulação de Uso (Validação)
+
+Para demonstrar a aplicabilidade do sistema, foi considerada a seguinte situação simulada:
+
+Um usuário acessa o portal em busca de orientação emocional. A partir da página inicial, ele consegue navegar até o guia de apoio, acessar conteúdos educativos e utilizar os recursos disponíveis de forma simples e organizada.
+
+Essa simulação demonstra que o sistema é funcional, acessível e capaz de atender às necessidades identificadas na Instituição Aurora.
+
+---
+
 🔗 Acesse o projeto:  
 https://amanda-aandrade.github.io/aprenda-facil-pex/
 
