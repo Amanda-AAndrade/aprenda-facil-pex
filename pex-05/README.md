@@ -82,6 +82,26 @@ Essa experiência contribuiu para o desenvolvimento profissional e prático da a
 
 ---
 
+## Metodologia
+O desenvolvimento do projeto seguiu etapas estruturadas, iniciando com o diagnóstico da Instituição Aurora, realizado por meio da análise de cenários simulados, identificação de necessidades e levantamento de problemas relacionados ao atendimento emocional.
+Em seguida, foi realizado o levantamento de requisitos, considerando as funcionalidades necessárias para atender às demandas identificadas, como organização de conteúdos, acesso a materiais educativos e suporte informativo aos usuários.
+Posteriormente, foi desenvolvido o protótipo da solução por meio de um sistema web, utilizando tecnologias como HTML, CSS e JavaScript. A estrutura do portal foi planejada para garantir acessibilidade, usabilidade e organização das informações.
+Por fim, foram realizados testes simulados de navegação e validação da interface, com o objetivo de verificar a funcionalidade do sistema e sua adequação às necessidades propostas.
+
+--
+
+## Análise de Resultados
+A partir da simulação de uso do sistema, foi possível observar resultados positivos relacionados à organização das informações e facilidade de navegação.
+Como indicadores qualitativos, destaca-se a melhoria na experiência do usuário, com acesso simplificado aos conteúdos e maior clareza na estrutura das informações.
+
+Como indicadores quantitativos simulados, considera-se:
+- Redução do tempo de busca por informações
+- Aumento no acesso às páginas de conteúdo
+- Maior interação com os materiais disponíveis
+Esses resultados indicam que a solução proposta atende aos objetivos definidos, contribuindo para a melhoria dos serviços da Instituição Aurora.
+
+--- 
+
 ## 🌍 Impacto Social e ODS
 
 O projeto está alinhado ao **ODS 3 — Saúde e Bem-estar**, ao promover o acesso à informação e incentivar o cuidado com a saúde emocional.
@@ -91,6 +111,7 @@ Mesmo sendo uma simulação acadêmica, o projeto demonstra como a tecnologia po
 ---
 
 ## Reflexão Geral do Projeto (PEX I ao V)
+
 O desenvolvimento dos Projetos de Extensão I ao V proporcionou uma evolução significativa na compreensão e aplicação prática dos conhecimentos adquiridos ao longo do curso.
 No PEX I, o foco foi a idealização inicial do projeto, com a definição do tema e dos objetivos. Já no PEX II, foi realizado o diagnóstico da Instituição Aurora, identificando problemas e necessidades relacionadas ao atendimento emocional.
 No PEX III, foram propostas soluções para os problemas identificados, com foco na utilização da tecnologia como ferramenta de apoio. No entanto, nessa etapa houve dificuldades relacionadas à ausência de evidências práticas, o que evidenciou a importância de validar as soluções propostas.
