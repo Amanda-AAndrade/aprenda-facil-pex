@@ -1,16 +1,16 @@
-# Aprenda Fácil — Projetos de Extensão PEX I–V
+# Aprenda Fácil — Portal educacional e projetos de extensão PEX I–V
 
 <p align="center">
   <img src="logo-aprenda-facil.png" width="180" alt="Logo Aprenda Fácil">
 </p>
 
 <p align="center">
-  <strong>Seu portal para aprendizado gratuito e acessível.</strong>
+  <strong>Um ponto de partida para aprender, organizar os estudos e evoluir no seu ritmo.</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/projeto-acad%C3%AAmico-4776a8" alt="Projeto acadêmico">
-  <img src="https://img.shields.io/badge/curso-An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas-527a67" alt="Curso ADS">
+  <img src="https://img.shields.io/badge/projeto-acad%C3%AAmico-7658c8" alt="Projeto acadêmico">
+  <img src="https://img.shields.io/badge/curso-ADS-527a67" alt="Curso ADS">
   <img src="https://img.shields.io/badge/front--end-HTML%20%7C%20CSS%20%7C%20JavaScript-e6a34a" alt="HTML, CSS e JavaScript">
 </p>
 
@@ -20,40 +20,50 @@
 
 Este repositório reúne os materiais dos **Projetos de Extensão I a V (PEX I–V)** realizados durante a graduação em Análise e Desenvolvimento de Sistemas, além do código-fonte do portal web **Aprenda Fácil**.
 
-O conteúdo registra diferentes etapas de um percurso acadêmico: a concepção de um portal educacional, os estudos de diagnóstico da Instituição Aurora (fictícia), a análise de dados e a apresentação de uma proposta de solução digital.
+O histórico registra diferentes etapas de um percurso acadêmico: a concepção de um portal educacional, estudos de diagnóstico da Instituição Aurora (fictícia), análise de informações e apresentação de uma proposta de solução digital.
 
 O repositório deve ser entendido como um conjunto de entregas acadêmicas e artefatos de desenvolvimento — não apenas como um único site.
 
 ## Portal Aprenda Fácil
 
-O portal público apresenta uma proposta de apoio ao aprendizado gratuito e acessível, com conteúdos introdutórios e orientações de estudo.
+O portal apresenta uma proposta de apoio ao aprendizado gratuito e acessível, com temas introdutórios, orientações para organização dos estudos e materiais complementares planejados.
 
 **[Acessar o portal publicado](https://amanda-aandrade.github.io/aprenda-facil-pex/)**
 
-### Páginas do portal
+### Páginas
 
 | Arquivo | Conteúdo |
 |---|---|
-| index.html | Página inicial, áreas de aprendizado, apresentação do projeto e acesso às demais seções |
-| sobre.html | Objetivos, público-alvo, justificativa, tecnologias e relação com o PEX |
-| cursos.html | Cards conceituais com temas introdutórios de HTML/CSS, JavaScript e lógica de programação |
-| guia.html | Orientações de organização, rotina e técnicas de estudo, trilhas sugeridas e checklist |
-| ebooks.html | Catálogo demonstrativo de materiais sugeridos para leitura complementar |
-| documentacao.html | Documentação acadêmica com resumo, objetivos, escopo, metodologia, tecnologias e roadmap |
-| perfil.html | Página demonstrativa de perfil e apresentação da jornada de aprendizagem |
+| `index.html` | Página inicial, áreas de aprendizado, busca local de conteúdos e atalhos para as seções do portal |
+| `cursos.html` | Cards conceituais com trilhas introdutórias de HTML/CSS, JavaScript e lógica de programação |
+| `guia.html` | Orientações de organização, rotina e técnicas de estudo, trilhas sugeridas e checklist interativo |
+| `ebooks.html` | Temas sugeridos para materiais de leitura complementar; os arquivos ainda não estão disponíveis para download |
+| `sobre.html` | Objetivos, público-alvo, justificativa, tecnologias e relação com o ODS 4 |
+| `documentacao.html` | Documentação acadêmica com resumo, objetivos, escopo, metodologia, tecnologias e roadmap |
+| `perfil.html` | Página demonstrativa de apresentação da trajetória de aprendizagem, sem autenticação |
 
-### O que está implementado e o que é demonstrativo
+### Funcionalidades implementadas no front-end
+
+- Navegação compartilhada entre as páginas, com menu responsivo para telas menores e indicação da página atual.
+- Busca local na página inicial por assuntos e recursos descritos no próprio portal. A busca não consulta uma API nem um catálogo remoto.
+- Checklist de estudos interativo, com progresso visual e armazenamento das marcações no navegador por meio de `localStorage`.
+- Opção para imprimir o checklist ou salvá-lo como PDF usando a função de impressão do navegador.
+- Botão de retorno ao topo, com comportamento acessível e verificação da existência do componente em cada página.
+- Atualização automática do ano no rodapé.
+
+### Escopo e limitações atuais
 
 O site é um front-end estático construído com HTML, CSS e JavaScript. Algumas áreas apresentam conceitos e interfaces planejadas, e não serviços completos:
 
-- Os cards da página de cursos apresentam temas e conteúdos introdutórios; não representam uma plataforma de cursos com aulas, matrícula ou acompanhamento.
-- Os botões dos materiais na página de e-books estão desabilitados nesta versão.
-- A página de perfil é uma apresentação estática; não há autenticação, conta de usuário ou persistência de perfil.
-- O formulário de busca aparece na interface, mas não possui lógica de pesquisa conectada nesta versão.
-- O arquivo script.js implementa o comportamento do botão de voltar ao topo.
+- Os cards da página de cursos apresentam trilhas e tópicos introdutórios; não representam uma plataforma de cursos com aulas, matrícula, avaliações ou certificados.
+- Matemática e Português aparecem como áreas em expansão na página inicial; não possuem trilhas de conteúdo implementadas nesta versão.
+- A página de materiais apresenta temas sugeridos, mas não oferece arquivos para download.
+- A página de perfil é demonstrativa; não há autenticação, conta de usuário ou sincronização de perfil.
+- A busca trabalha com uma lista local e curada de páginas e assuntos; não realiza pesquisa dinâmica em banco de dados.
+- O checklist salva as marcações somente no navegador atual. Limpar os dados do navegador pode remover esse progresso, e não existe sincronização entre dispositivos.
 - Não há backend, banco de dados ou API integrados ao portal.
 
-Essas distinções são importantes para demonstrar o estágio real do projeto sem atribuir funcionalidades que ainda não existem.
+Essas distinções descrevem o estágio real do projeto sem atribuir funcionalidades que ainda não existem.
 
 ## Organização dos Projetos de Extensão
 
@@ -75,7 +85,7 @@ Estudo de uma instituição fictícia de acolhimento emocional, com identificaç
 
 ### PEX III — Análise e proposição de soluções
 
-Aprofundamento do diagnóstico da Aurora, com análise de processos, riscos, requisitos e proposição conceitual de soluções digitais, como organização de informações, atendimento e ferramentas de apoio.
+Aprofundamento do diagnóstico da Aurora, com análise de processos, riscos, requisitos e proposição conceitual de soluções digitais.
 
 [Consultar documentação do PEX III](./pex-03/README.md)
 
@@ -104,9 +114,10 @@ O relatório do PEX V descreve o Aprenda Fácil como parte da apresentação da 
 
 ### Utilizadas no portal
 
-- **HTML5:** estrutura das páginas.
-- **CSS3:** identidade visual, estilos, grid/flexbox e responsividade.
-- **JavaScript:** interações simples do front-end, incluindo o botão de voltar ao topo.
+- **HTML5:** estrutura semântica das páginas.
+- **CSS3:** identidade visual, responsividade, Grid, Flexbox, estados de foco e impressão.
+- **JavaScript:** navegação responsiva, busca local, checklist e interações da interface.
+- **localStorage:** persistência local do checklist no navegador.
 - **Google Fonts (Poppins):** tipografia carregada externamente.
 
 ### Ferramentas e apoio ao desenvolvimento documentados
@@ -121,10 +132,10 @@ O relatório do PEX V descreve o Aprenda Fácil como parte da apresentação da 
 ~~~text
 aprenda-facil-pex/
 ├── index.html
-├── sobre.html
 ├── cursos.html
 ├── guia.html
 ├── ebooks.html
+├── sobre.html
 ├── documentacao.html
 ├── perfil.html
 ├── style.css
@@ -201,11 +212,11 @@ Registrar e enviar alterações:
 
 ~~~bash
 git add .
-git commit -m "docs: atualiza documentação do Aprenda Fácil"
+git commit -m "feat: aprimora interface do Aprenda Fácil"
 git push origin main
 ~~~
 
-Não é necessário executar npm install nesta versão.
+Não é necessário executar `npm install` nesta versão.
 
 ## Publicação no GitHub Pages
 
@@ -213,16 +224,16 @@ O site está publicado pelo GitHub Pages:
 
 **[Abrir Aprenda Fácil](https://amanda-aandrade.github.io/aprenda-facil-pex/)**
 
-Para configurar ou revisar a publicação, acesse **Settings → Pages**, selecione **Deploy from a branch**, escolha main e a pasta raiz (/ root).
+Para configurar ou revisar a publicação, acesse **Settings → Pages**, selecione **Deploy from a branch**, escolha `main` e a pasta raiz (`/root`).
 
-## Próximas evoluções técnicas
+## Próximas evoluções
 
-- [ ] Conectar a busca a uma lógica de pesquisa real.
-- [ ] Substituir os cards conceituais por conteúdos e cursos efetivamente disponíveis.
-- [ ] Disponibilizar os materiais de leitura e habilitar os respectivos links.
-- [ ] Definir o escopo funcional da página de perfil antes de implementar autenticação.
-- [ ] Avaliar requisitos de acessibilidade e aprimoramento da responsividade.
-- [ ] Definir, caso faça sentido para o projeto, uma arquitetura de backend e persistência de dados.
+- [ ] Ampliar e revisar o catálogo de conteúdos da busca local.
+- [ ] Transformar as trilhas conceituais em conteúdos efetivamente disponíveis.
+- [ ] Produzir ou selecionar materiais de leitura e disponibilizar links autorizados.
+- [ ] Avaliar conteúdos introdutórios para Matemática e Português.
+- [ ] Realizar testes de acessibilidade e usabilidade com pessoas usuárias.
+- [ ] Definir o escopo de funcionalidades que justificaria um backend e persistência de dados.
 
 ## Autoria
 
