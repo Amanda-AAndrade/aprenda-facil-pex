@@ -11,18 +11,30 @@
 <body>
 
  <!-- ========= HEADER (logo + botão Perfil) ========= -->
-  <header class="topo" id="topo">
+    <header class="topo" id="topo">
     <div class="wrap topo-inner">
-      <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
+      <a class="brand-link" href="index.html" aria-label="Aprenda Fácil — página inicial">
+        <img src="logo-aprenda-facil.png" alt="Aprenda Fácil" class="logo">
+      </a>
 
-       <!-- Botão Perfil CORRETO -->
-    <button
-      class="perfil-btn"
-      type="button"
-      onclick="window.location.href='perfil.html'">Perfil
-    </button>
-  </div>
-</header>
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Abrir menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+        <ul class="site-nav-list">
+        <li><a class="nav-link" href="index.html">Início</a></li>
+        <li><a class="nav-link" href="cursos.html">Cursos</a></li>
+        <li><a class="nav-link" href="guia.html">Guia de estudos</a></li>
+        <li><a class="nav-link is-current" href="ebooks.html" aria-current="page">Materiais</a></li>
+        <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li><a class="nav-link" href="documentacao.html">Documentação</a></li>
+        </ul>
+      </nav>
+
+      <a class="perfil-btn" href="perfil.html">Perfil</a>
+    </div>
+  </header>
 
   <main class="pagina-ebooks">
 
@@ -45,8 +57,8 @@
 
         <h2>Materiais sugeridos</h2>
         <p class="ebooks-intro">
-          Estes títulos servem como referência de estudo. Você pode substituí-los
-          por materiais próprios, PDFs autorais ou indicações específicas no futuro.
+          Os cards representam temas planejados para leitura complementar. Os arquivos
+          ainda não estão disponíveis para download nesta versão.
         </p>
 
         <div class="ebooks-grid">
@@ -63,9 +75,7 @@
               Nível: Iniciante<br>
               Foco: Estrutura e visual de páginas web
             </p>
-            <button class="ebook-btn" type="button" disabled>
-              Download em breve
-            </button>
+            <span class="ebook-status">Material em preparação</span>
           </article>
 
           <!-- CARD 2 -->
@@ -80,9 +90,7 @@
               Nível: Iniciante / Recomeço<br>
               Foco: Raciocínio lógico e algoritmos
             </p>
-            <button class="ebook-btn" type="button" disabled>
-              Download em breve
-            </button>
+            <span class="ebook-status">Material em preparação</span>
           </article>
 
           <!-- CARD 3 -->
@@ -97,9 +105,7 @@
               Nível: Iniciante<br>
               Foco: Fundamentos da linguagem
             </p>
-            <button class="ebook-btn" type="button" disabled>
-              Download em breve
-            </button>
+            <span class="ebook-status">Material em preparação</span>
           </article>
 
           <!-- CARD 4 -->
@@ -114,9 +120,7 @@
               Nível: Todos<br>
               Foco: Organização, foco e disciplina
             </p>
-            <button class="ebook-btn" type="button" disabled>
-              Download em breve
-            </button>
+            <span class="ebook-status">Material em preparação</span>
           </article>
 
         </div>
@@ -136,8 +140,8 @@
            e liberar downloads de forma controlada aos usuários.
           </p>
           <p>
-            No futuro, o back-end pode controlar o cadastro de ebooks, permitindo
-            upload de PDFs, organização por categorias e liberação de downloads.
+            Em uma evolução futura, o portal poderá receber materiais autorais e links
+            de leitura, com organização por categorias e informações de origem.
           </p>
         </div>
       </div>
@@ -174,7 +178,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
+      <p>&copy; <span data-current-year></span> Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
     </div>
   </footer>
 
