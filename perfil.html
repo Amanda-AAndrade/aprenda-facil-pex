@@ -14,10 +14,28 @@
 <body>
 
   <!-- ========= HEADER (logo + botão Perfil) ========= -->
-  <header class="topo" id="topo">
+    <header class="topo" id="topo">
     <div class="wrap topo-inner">
-      <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
-      
+      <a class="brand-link" href="index.html" aria-label="Aprenda Fácil — página inicial">
+        <img src="logo-aprenda-facil.png" alt="Aprenda Fácil" class="logo">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Abrir menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+        <ul class="site-nav-list">
+        <li><a class="nav-link" href="index.html">Início</a></li>
+        <li><a class="nav-link" href="cursos.html">Cursos</a></li>
+        <li><a class="nav-link" href="guia.html">Guia de estudos</a></li>
+        <li><a class="nav-link" href="ebooks.html">Materiais</a></li>
+        <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li><a class="nav-link" href="documentacao.html">Documentação</a></li>
+        </ul>
+      </nav>
+
+      <a class="perfil-btn" href="perfil.html">Perfil</a>
     </div>
   </header>
   
@@ -42,60 +60,57 @@
           <h1 class="perfil-nome">Amanda Andrade</h1>
 
           <p class="perfil-legenda">
-            Do Aprenda Fácil ao Qzverso • Jornada Full-Stack em construção 🌌
+            Formação em ADS • Engenharia de Software em andamento
           </p>
 
           <p class="perfil-bio">
-            Estudante de Análise e Desenvolvimento de Sistemas, iniciando minha jornada na tecnologia
-            com foco em desenvolvimento Full-Stack. Criadora do projeto <strong>Aprenda Fácil</strong> e futura
-            desenvolvedora do <strong>Qzverso</strong>. 🚀💜
+            Formada em <strong>Análise e Desenvolvimento de Sistemas</strong> e estudante de
+            <strong>Engenharia de Software</strong>. Desenvolvo projetos web para aplicar
+            conhecimentos em HTML, CSS e JavaScript, enquanto aprofundo meus estudos em
+            Python, back-end e bancos de dados.
           </p>
 
           <!-- Badges / chips -->
           <div class="perfil-badges">
-            <span class="badge badge-dev">Front-end iniciante</span>
-            <span class="badge badge-back">Futura Back-end</span>
-            <span class="badge badge-qz">Qzverso Dev</span>
+            <span class="badge badge-dev">Desenvolvimento web</span>
+            <span class="badge badge-back">Python em estudo</span>
+            <span class="badge badge-qz">Projetos próprios</span>
           </div>
 
           <!-- Bloco de informações -->
           <div class="perfil-infos">
-            <p><strong>Progresso:</strong> Iniciante • Em constante evolução</p>
-            <p><strong>Nível atual:</strong> Base sólida em HTML, CSS e JavaScript</p>
-            <p><strong>Interesses:</strong> Lógica, JavaScript, Node.js, APIs, Design, projetos próprios</p>
+            <p><strong>Formação:</strong> ADS concluído • Engenharia de Software em andamento</p>
+            <p><strong>Prática atual:</strong> HTML, CSS, JavaScript e documentação de projetos</p>
+            <p><strong>Interesses:</strong> Python, back-end, APIs, bancos de dados e arquitetura de software</p>
           </div>
 
-          <!-- Barra de XP / progresso -->
-          <div class="perfil-xp">
-            <div class="xp-topo">
-              <span>XP da Jornada Aprenda Fácil</span>
-              <span class="xp-valor">30%</span>
-            </div>
-            <div class="xp-barra">
-              <div class="xp-preenchido"></div>
-            </div>
-            <p class="xp-legenda">
-              Você já criou um portal completo, com múltiplas páginas, identidade visual, navegação e documentação.
-              Cada PEX, cada commit e cada linha de código aumentam sua barra de XP. ✨
-            </p>
-          </div>
-
-          <!-- Metinha próxima -->
-          <div class="perfil-meta">
-            <h2>Próximo level</h2>
+          <section class="perfil-meta">
+            <h2>Em desenvolvimento</h2>
             <ul>
-              <li>Publicar o Aprenda Fácil online (GitHub Pages ou similar).</li>
-              <li>Criar a primeira API / back-end simples para o Qzverso.</li>
-              <li>Começar o módulo de Node.js e banco de dados.</li>
+              <li>Aprofundamento em Python e lógica de programação.</li>
+              <li>Estudo de APIs e desenvolvimento back-end.</li>
+              <li>Modelagem e integração com bancos de dados.</li>
+              <li>Fundamentos de arquitetura e qualidade de software.</li>
             </ul>
-          </div>
+          </section>
+
+          <!-- Próximos passos -->
+          <section class="perfil-meta">
+            <h2>Próximos passos</h2>
+            <ul>
+              <li>Continuar evoluindo os projetos publicados.</li>
+              <li>Planejar a arquitetura de back-end do Qzverso.</li>
+              <li>Avançar nos estudos de Python e bancos de dados.</li>
+            </ul>
+          </section>
 
           <!-- Botões -->
           <div class="perfil-botoes">
             <a href="index.html" class="btn-perfil voltar">Voltar ao início</a>
-            <a href="#" class="btn-perfil sair">Sair (futuro login)</a>
+            <a href="https://github.com/Amanda-AAndrade" class="btn-perfil sair" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
           </div>
 
+          <p class="profile-disclaimer">Esta é uma página demonstrativa de apresentação. Não há autenticação nem dados de perfil sincronizados.</p>
         </section>
       </div>
     </div>
@@ -131,7 +146,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
+      <p>&copy; <span data-current-year></span> Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
     </div>
   </footer>
 
