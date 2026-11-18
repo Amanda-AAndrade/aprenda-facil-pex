@@ -11,18 +11,30 @@
 <body>
 
 <!-- ========= HEADER (logo + botão Perfil) ========= -->
-  <header class="topo" id="topo">
+    <header class="topo" id="topo">
     <div class="wrap topo-inner">
-      <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
+      <a class="brand-link" href="index.html" aria-label="Aprenda Fácil — página inicial">
+        <img src="logo-aprenda-facil.png" alt="Aprenda Fácil" class="logo">
+      </a>
 
-       <!-- Botão Perfil CORRETO -->
-    <button
-      class="perfil-btn"
-      type="button"
-      onclick="window.location.href='perfil.html'">Perfil
-    </button>
-  </div>
-</header>
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Abrir menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+        <ul class="site-nav-list">
+        <li><a class="nav-link" href="index.html">Início</a></li>
+        <li><a class="nav-link" href="cursos.html">Cursos</a></li>
+        <li><a class="nav-link is-current" href="guia.html" aria-current="page">Guia de estudos</a></li>
+        <li><a class="nav-link" href="ebooks.html">Materiais</a></li>
+        <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li><a class="nav-link" href="documentacao.html">Documentação</a></li>
+        </ul>
+      </nav>
+
+      <a class="perfil-btn" href="perfil.html">Perfil</a>
+    </div>
+  </header>
 
   <main class="pagina-guia">
 
@@ -169,25 +181,28 @@
             Use este checklist como lembrete diário. Você pode transformar em um
             PDF, imprimir ou manter em um bloco de notas.
           </p>
-          <ul>
-            <li>☑ Estudei pelo menos 25 minutos hoje.</li>
-            <li>☑ Pratiquei código, não só teoria.</li>
-            <li>☑ Anotei dúvidas para pesquisar depois.</li>
-            <li>☑ Dei um passo, mesmo que pequeno, em direção ao meu projeto.</li>
+          <div class="checklist-progress" role="progressbar" aria-label="Progresso do checklist" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0">
+            <span class="checklist-progress-fill" id="checklist-progress-fill"></span>
+          </div>
+          <p class="checklist-progress-label" id="checklist-progress-label" aria-live="polite">0 de 4 tarefas concluídas</p>
+          <ul class="study-checklist" id="study-checklist">
+            <li><label><input type="checkbox" data-checklist-item="study"><span>Estudei pelo menos 25 minutos hoje.</span></label></li>
+            <li><label><input type="checkbox" data-checklist-item="practice"><span>Pratiquei código, não só teoria.</span></label></li>
+            <li><label><input type="checkbox" data-checklist-item="notes"><span>Anotei dúvidas para pesquisar depois.</span></label></li>
+            <li><label><input type="checkbox" data-checklist-item="project"><span>Dei um passo, mesmo que pequeno, em direção ao meu projeto.</span></label></li>
           </ul>
         </div>
 
         <div class="checklist-acao">
           <p class="checklist-dica">
-            Dica: transforme esse checklist em um quadro no Miro ou em um caderno
-            físico e vá marcando seus avanços.
+            Suas marcações ficam salvas neste navegador. Para guardar ou imprimir o
+            planejamento, use a opção abaixo e escolha “Salvar como PDF” na janela de impressão.
           </p>
-          <button type="button" class="btn-primario" disabled>
-            Download do checklist (em breve)
-          </button>
-          <small class="nota-botao">
-            No futuro, você pode gerar esse PDF de forma automática pelo back-end.
-          </small>
+          <div class="checklist-actions">
+            <button type="button" class="btn-primario" id="print-checklist">Imprimir / Salvar em PDF</button>
+            <button type="button" class="btn-reset" id="reset-checklist">Limpar marcações</button>
+          </div>
+          <small class="nota-botao">O progresso é armazenado localmente neste dispositivo; não há sincronização entre aparelhos.</small>
         </div>
       </div>
     </section>
@@ -223,7 +238,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
+      <p>&copy; <span data-current-year></span> Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
     </div>
   </footer>
 
