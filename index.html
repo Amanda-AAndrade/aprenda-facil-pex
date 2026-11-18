@@ -14,18 +14,30 @@
 <body>
 
   <!-- ========= HEADER (logo + botão Perfil) ========= -->
-  <header class="topo" id="topo">
+    <header class="topo" id="topo">
     <div class="wrap topo-inner">
-      <img src="logo-aprenda-facil.png" alt="Logo Aprenda Fácil" class="logo">
+      <a class="brand-link" href="index.html" aria-label="Aprenda Fácil — página inicial">
+        <img src="logo-aprenda-facil.png" alt="Aprenda Fácil" class="logo">
+      </a>
 
-       <!-- Botão Perfil CORRETO -->
-    <button
-      class="perfil-btn"
-      type="button"
-      onclick="window.location.href='perfil.html'">Perfil
-    </button>
-  </div>
-</header>
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Abrir menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
+        <ul class="site-nav-list">
+        <li><a class="nav-link is-current" href="index.html" aria-current="page">Início</a></li>
+        <li><a class="nav-link" href="cursos.html">Cursos</a></li>
+        <li><a class="nav-link" href="guia.html">Guia de estudos</a></li>
+        <li><a class="nav-link" href="ebooks.html">Materiais</a></li>
+        <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li><a class="nav-link" href="documentacao.html">Documentação</a></li>
+        </ul>
+      </nav>
+
+      <a class="perfil-btn" href="perfil.html">Perfil</a>
+    </div>
+  </header>
 
   <!-- ========= CONTEÚDO PRINCIPAL ========= -->
   <main>
@@ -34,25 +46,26 @@
     <div class="wrap layout">
 
       <!-- MENU LATERAL -->
-      <aside class="sidebar" aria-label="Navegação principal">
-        <a class="cta" href="cursos.html">Explorar Cursos</a>
-        <a class="cta" href="guia.html">Guia para os Estudos</a>
-        <a class="cta" href="ebooks.html">Ebooks</a>
-        <a class="cta" href="sobre.html">Sobre</a>
-
+      <aside class="sidebar home-shortcuts" aria-label="Atalhos para começar">
+        <p class="shortcuts-label">COMECE POR AQUI</p>
+        <a class="cta" href="cursos.html">Conheça as trilhas introdutórias <span aria-hidden="true">→</span></a>
+        <a class="cta" href="guia.html">Organize sua rotina de estudos <span aria-hidden="true">→</span></a>
+        <a class="cta" href="ebooks.html">Explore temas para leitura <span aria-hidden="true">→</span></a>
+        <p class="shortcuts-note">Conteúdos em evolução. As trilhas e materiais são demonstrativos nesta versão.</p>
       </aside>
 
       <!-- HERO (frase + busca) -->
       <section class="hero" aria-labelledby="titulo-hero">
-        <h1 id="titulo-hero">Seu portal para aprendizado gratuito e acessível!</h1>
+        <p class="eyebrow">APRENDIZAGEM NO SEU RITMO</p>
+        <h1 id="titulo-hero">Aprender fica mais leve quando existe um caminho.</h1>
+        <p class="hero-description">Explore conteúdos introdutórios, organize sua rotina e encontre um ponto de partida para continuar evoluindo.</p>
 
-        <form class="search" role="search" aria-label="Buscar cursos e materiais">
-          <label class="visually-hidden" for="q">Buscar</label>
-          <input id="q" name="q" type="search" placeholder="Buscar">
-          <button type="submit" class="icon-btn" title="Pesquisar" aria-label="Pesquisar">
-            🔍
-          </button>
+        <form class="search" id="site-search" role="search" aria-label="Buscar conteúdos no Aprenda Fácil">
+          <label class="visually-hidden" for="q">Buscar conteúdos</label>
+          <input id="q" name="q" type="search" placeholder="Busque HTML, JavaScript, lógica ou organização..." autocomplete="off" aria-controls="search-results">
+          <button type="submit" class="icon-btn">Buscar</button>
         </form>
+        <div class="search-results" id="search-results" aria-live="polite" hidden></div>
       </section>
 
     </div> <!-- fim .wrap.layout -->
@@ -63,19 +76,26 @@
         <h2>Áreas de Aprendizado</h2>
 
         <div class="grid-categorias">
-          <article class="card">
+          <a class="card category-card" href="cursos.html">
+            <span class="category-icon" aria-hidden="true">⌘</span>
+            <span class="category-status">Explore</span>
             <h3>Tecnologia</h3>
-            <p>Aprenda HTML, CSS, JavaScript e fundamentos de programação.</p>
-          </article>
+            <p>Conheça temas introdutórios de HTML, CSS, JavaScript e lógica de programação.</p>
+            <span class="category-link">Ver trilhas <span aria-hidden="true">→</span></span>
+          </a>
 
-          <article class="card">
+          <article class="card category-card category-planned">
+            <span class="category-icon" aria-hidden="true">∑</span>
+            <span class="category-status">Em expansão</span>
             <h3>Matemática</h3>
-            <p>Desenvolva raciocínio lógico, cálculo e resolução de problemas.</p>
+            <p>Espaço previsto para conteúdos de raciocínio lógico, cálculo e resolução de problemas.</p>
           </article>
 
-          <article class="card">
+          <article class="card category-card category-planned">
+            <span class="category-icon" aria-hidden="true">Aa</span>
+            <span class="category-status">Em expansão</span>
             <h3>Português</h3>
-            <p>Melhore sua escrita, gramática e interpretação de textos.</p>
+            <p>Espaço previsto para conteúdos de escrita, gramática e interpretação de textos.</p>
           </article>
         </div>
       </div>
@@ -93,9 +113,10 @@
             oportunidades para quem deseja aprender no seu próprio ritmo.
           </p>
           <p>
-            A plataforma reúne conteúdos organizados em trilhas de estudo, guias e
-            materiais de apoio, ajudando estudantes, iniciantes em tecnologia e pessoas
-            em transição de carreira.
+            O portal apresenta orientações de estudo, trilhas temáticas introdutórias e
+            sugestões de materiais de apoio. Parte dos recursos permanece em planejamento
+            e é identificada como demonstrativa para não confundir visitantes sobre o que
+            já está disponível.
           </p>
 
           <ul class="sobre-lista">
@@ -153,7 +174,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
+      <p>&copy; <span data-current-year></span> Aprenda Fácil. Projeto acadêmico sem fins lucrativos.</p>
     </div>
   </footer>
 
